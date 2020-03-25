@@ -1,15 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
 
 
 function App() {
   return (
-    <div className="App">
-      <div><Header /></div>
-      <div><Footer /></div>
+    <div className="app-wrapper">
+      
+      <header className="header">
+        <img src="code.png" alt="code"/>
+      </header>
+      
+      <nav className="nav">
+        <div>
+          <a href="">Profile</a>
+        </div>        
+        <div>
+          <a href="">Messages</a>
+        </div>        
+        <div>
+          <a href="">News</a>
+        </div>        
+        <div>
+          <a href="">Music</a>
+        </div>        
+        <div>
+          <a href="">Settings</a>
+        </div>        
+      </nav>
+      
+      <div className="content">
+        <div>
+          <img src="city.jpg" alt="city"/>
+        </div>
+        <div>avatar + description</div>
+        <div>
+          My Posts
+          <div>New Posts</div>
+          <div>post 1</div>
+          <div>post 2</div>
+        </div>
+      </div>
+
     </div>
   );
 }
