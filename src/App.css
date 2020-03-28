@@ -1,4 +1,8 @@
- .app-wrapper {
+body {
+  box-sizing: border-box;  
+}
+
+.app-wrapper {
   display: grid;  
   width: 100%;
   margin: 0 auto;
@@ -9,6 +13,8 @@
 
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
+  
+  border: 1px solid red;
 }
 
 .header {
