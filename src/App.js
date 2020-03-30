@@ -8,9 +8,13 @@ import Content from './components/Content';
 function App() {
   return (
     <div className="app-wrapper">            
-      <Header />
-      <Navbar />
-      <Content />
+      <div className="app-wrapper__hdr">
+        <Header />
+      </div>
+      <div className="app-wrapper__bdy">
+        <Navbar />
+        <Content />
+      </div>      
     </div>
   );
 }

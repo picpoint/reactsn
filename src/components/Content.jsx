@@ -2,11 +2,9 @@ import React from 'react';
 
 function Content() {
   return(
-    <div className="content">
-      <div>
-        <img src="city.jpg" alt="city"/>
-      </div>
-      <div>avatar + description</div>
+    <div className="content">        
+      <img src="city.jpg" alt="city"/>      
+      <span>avatar + description</span>
       <div>
         My Posts
         <div>New Posts</div>
