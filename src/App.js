@@ -7,14 +7,14 @@ import Content from './components/Content';
 
 function App() {
   return (
-    <div className="app-wrapper">            
-      <div className="app-wrapper__hdr">
-        <Header />
+    <div className = "general">
+      <div className = "general__topBlock">
+        <Header/>
       </div>
-      <div className="app-wrapper__bdy">
-        <Navbar />
-        <Content />
-      </div>      
+      <div className = "general__centerBlock">
+        <Navbar/>        
+        <Content/>
+      </div>
     </div>
   );
 }

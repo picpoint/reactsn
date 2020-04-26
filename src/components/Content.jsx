@@ -2,7 +2,7 @@ import React from 'react';
 
 function Content() {
   return(
-    <div className="content">        
+    <div className="general__content">        
       <img src="city.jpg" alt="city"/>      
       <span>avatar + description</span>
       <div>

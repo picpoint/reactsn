@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 function Header () {
   return(
-  <header className="header">
+  <header className="general__header">
     <img src="code.png" alt="code"/>
   </header>
   );
