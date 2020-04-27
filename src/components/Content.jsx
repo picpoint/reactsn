@@ -1,5 +1,5 @@
 import React from 'react';
-import cnt from './Content.module.less';
+import cont from './Content.module.css';
 
 function Content() {
   return(
@@ -8,9 +8,9 @@ function Content() {
       <span>avatar + description</span>
       <div>
         My Posts
-        <div className = "item">New Posts</div>
-        <div className = "item">post 1</div>
-        <div className = "item">post 2</div>
+        <div className={cont.item}>New Posts</div>
+        <div className={cont.item}>post 1</div>
+        <div className={cont.item}>post 2</div>
       </div>
     </div>  
   );
