@@ -1,13 +1,14 @@
 import React from 'react';
+import nv from'./Navbar.module.less';
 
 function Navbar () {
   return (
     <nav className="general__nav">      
-      <a href="">Profile</a>      
-      <a href="">Messages</a>      
-      <a href="">News</a>      
-      <a href="">Music</a>      
-      <a href="">Settings</a>      
+      <a href="" className = "item">Profile</a>      
+      <a href="" className = "item">Messages</a>      
+      <a href="" className = "item">News</a>      
+      <a href="" className = "item">Music</a>      
+      <a href="" className = "item">Settings</a>      
     </nav>
   );  
 }
