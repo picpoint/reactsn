@@ -1,5 +1,7 @@
 import React from 'react';
-import cont from './Content.module.css';
+import cnt from './Content.module.css';
+import Post from './post/Post';
+
 
 function Content() {
   return(
@@ -8,9 +10,8 @@ function Content() {
       <span>avatar + description</span>
       <div>
         My Posts
-        <div className={cont.item}>New Posts</div>
-        <div className={cont.item}>post 1</div>
-        <div className={cont.item}>post 2</div>
+        <Post name="Semen" age="30"/>
+        <Post name = "Petro" age="20"/>        
       </div>
     </div>  
   );

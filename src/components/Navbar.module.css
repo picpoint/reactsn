@@ -1,5 +1,6 @@
 .item {
-  color: green;
+  color: blue;
+  font-weight: bolder;
 }
 
 .active {

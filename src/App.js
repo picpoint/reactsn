@@ -2,7 +2,7 @@ import React from 'react';
 import './less/style.less';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Content from './components/Content';
+import Content from './components/content/Content';
 
 
 function App() {
