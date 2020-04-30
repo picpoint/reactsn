@@ -11,6 +11,8 @@ function Post(props) {
         name: {props.name}
         <br/>
         age: {props.age}
+        <br/>
+        likes: {props.like}
       </div>      
     </div>
   );

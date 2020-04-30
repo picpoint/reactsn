@@ -11,7 +11,8 @@ function Content() {
       <div>
         My Posts
         <Post name="Semen" age="30"/>
-        <Post name = "Petro" age="20"/>        
+        <Post name = "Petro" age="20"/>
+        <Post like="10"/>
       </div>
     </div>  
   );
