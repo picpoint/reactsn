@@ -3,6 +3,8 @@ import './less/style.less';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Content from './components/content/Content';
+import Dialogs from './components/Dialogs/Dialogs';
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
       <div className = "general__centerBlock">
         <Navbar/>        
         <Content/>
+        {/* <Dialogs/> */}
       </div>
     </div>
   );
