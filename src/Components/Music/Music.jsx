@@ -1,14 +1,13 @@
 import React from 'react';
-import wrp from './Music.module.css';
+import msc from './Music.module.css';
 
 
-function Music () {
+function Music() {
   return(
-    <div className={wrp.wrapper}>
+    <div className={msc.musicblock}>
       <span>Music</span>
     </div>
   );  
 }
-
 
 export default Music;

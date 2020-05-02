@@ -1,10 +1,9 @@
 import React from 'react';
-import wrp from './Settings.module.css';
+import stngs from './Settings.module.css';
 
-
-function Settings () {
+function Settings() {
   return(
-    <div className={wrp.wrapper}>
+    <div className={stngs.settingsblock}>
       <span>Settings page</span>
     </div>
   );  

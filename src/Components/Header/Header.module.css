@@ -1,0 +1,12 @@
+.hdrblock {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  height: 10%;  
+  /* background-color: aquamarine;   */
+}
+
+.hdrblock img {
+  height: 80%;
+}
