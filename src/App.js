@@ -16,19 +16,20 @@ function App() {
   return (
     <BrowserRouter>
       <div className = "general">
+        
         <div className = "general__topBlock">
           <Header/>
         </div>
+        
         <div className = "general__centerBlock">        
           <Navbar/>        
           <Route path="/profile" component={Content}/>
           <Route path="/dialogs" component={Dialogs}/>
           <Route path="/news" component={News}/>
           <Route path="/music" component={Music}/>
-          <Route path="/settings" component={Settings}/>
-          {/* <Content/> */}
-          {/* <Dialogs/> */}
+          <Route path="/settings" component={Settings}/>          
         </div>
+
       </div>
     </BrowserRouter>
   );
