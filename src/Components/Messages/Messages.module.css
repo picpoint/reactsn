@@ -1,4 +1,41 @@
 .messages {
-    border: 1px solid red;
+  border: 1px solid red;  
+  display: flex;  
+  width: 80%;
 }
 
+.messages .users {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  width: 150px;
+  height: 100%;  
+}
+
+.messages .users a {
+  background-color: lightblue;
+  border-radius: 15px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.messages .usrmsg {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  width: 150px;
+  height: 100%;  
+}
+
+.messages .usrmsg span {
+  background-color: lightgreen;
+  border-radius: 15px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+}
