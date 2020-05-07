@@ -11,6 +11,7 @@ let datasUsers = [
   {id: 5, name: "Petro"}
 ];
 
+
 let datasMessages = [
   {id: 1, dtmsg: "Hi"},
   {id: 2, dtmsg: "Hello"},
@@ -18,12 +19,15 @@ let datasMessages = [
 ];
 
 
+
+
+
+
 function SingleUser(props) {
   return (    
     <NavLink to={"/messages/" + props.id}>{props.name}</NavLink>    
   );
 }
-
 
 
 function UserMessage(props) {
@@ -34,26 +38,34 @@ function UserMessage(props) {
 
 
 
+
+
+let dElems = datasUsers.map((d) => {
+  return <SingleUser id={d.id} name={d.name} />
+});
+
+
+let mElems = datasMessages.map((m) => {
+  return <UserMessage id={m.id} message={m.dtmsg}/>        
+});
+
+
+
+
+
+
 function Messages() {
   return(
     <div className={msg.messages}>
       
       <div className={msg.users}>
-        <SingleUser id={datasUsers[0].id} name={datasUsers[0].name}/>
-        <SingleUser id={datasUsers[1].id} name={datasUsers[1].name}/>
-        {/* <SingleUser id="3" name="Ivan"/>        
-        <SingleUser id="4" name="Igor"/>
-        <SingleUser id="5" name="Petro"/>         */}
+        {/* <SingleUser id={datasUsers[0].id} name={datasUsers[0].name}/>         */}
+        { dElems }
       </div>
       
       <div className={msg.usrmsg}>  
-        <UserMessage id={datasMessages[0].id} message={datasMessages[0].dtmsg}/>
-        <UserMessage id={datasMessages[1].id} message={datasMessages[1].dtmsg}/>
-        {/* <UserMessage message="Hi"/>
-        <UserMessage message="Hello"/>
-        <UserMessage message="all fine"/>
-        <UserMessage message="so so"/>
-        <UserMessage message="ok"/> */}
+        {/* <UserMessage id={datasMessages[0].id} message={datasMessages[0].dtmsg}/>         */}
+        { mElems }
       </div>
 
     </div>
