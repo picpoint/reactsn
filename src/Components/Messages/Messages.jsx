@@ -3,19 +3,17 @@ import msg from './Messages.module.css';
 import { NavLink } from 'react-router-dom';
 
 
-let datasUsers = [
-  {id: 1, name: "Dimych"},
+let dataUsers = [
+  {id: 1, name: "Dmitry"},
   {id: 2, name: "Semen"},
-  {id: 3, name: "Ivan"},
+  {id: 3, name: "Petro"},
   {id: 4, name: "Igor"},
-  {id: 5, name: "Petro"}
 ];
 
-
-let datasMessages = [
-  {id: 1, dtmsg: "Hi"},
-  {id: 2, dtmsg: "Hello"},
-  {id: 3, dtmsg: "all fine"}
+let dataMessage = [
+  {id: 1, msg: "Hi"},
+  {id: 2, msg: "hello"},  
+  {id: 3, msg: "bu ga ga"},
 ];
 
 
@@ -23,31 +21,30 @@ let datasMessages = [
 
 
 function SingleUser(props) {
-  return (    
-    <NavLink to={"/messages/" + props.id}>{props.name}</NavLink>    
-  );
+  return(
+    <NavLink to={`/messages/${props.id}`}>{props.name}</NavLink>
+  );  
 }
-
 
 function UserMessage(props) {
   return(
-  <span>{props.message}</span>
+    <span>{props.msg}</span>
   );
 }
 
 
 
-
-
-let dElems = datasUsers.map((d) => {
-  return <SingleUser id={d.id} name={d.name} />
+let usr = dataUsers.map((d) => {
+  return(
+    <SingleUser id={d.id} name={d.name}/>
+  );
 });
 
-
-let mElems = datasMessages.map((m) => {
-  return <UserMessage id={m.id} message={m.dtmsg}/>        
+let msgusrs = dataMessage.map((m) => {
+  return(
+    <UserMessage msg={m.msg}/>
+  );
 });
-
 
 
 
@@ -58,11 +55,11 @@ function Messages() {
     <div className={msg.messages}>
       
       <div className={msg.users}>        
-        { dElems }
+        { usr }
       </div>
       
       <div className={msg.usrmsg}>          
-        { mElems }
+        { msgusrs }
       </div>
 
     </div>
