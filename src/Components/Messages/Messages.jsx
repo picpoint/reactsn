@@ -58,13 +58,11 @@ function Messages() {
   return(
     <div className={msg.messages}>
       
-      <div className={msg.users}>
-        {/* <SingleUser id={datasUsers[0].id} name={datasUsers[0].name}/>         */}
+      <div className={msg.users}>        
         { dElems }
       </div>
       
-      <div className={msg.usrmsg}>  
-        {/* <UserMessage id={datasMessages[0].id} message={datasMessages[0].dtmsg}/>         */}
+      <div className={msg.usrmsg}>          
         { mElems }
       </div>
 
