@@ -22,7 +22,6 @@ let datasMessages = [
 
 
 
-
 function SingleUser(props) {
   return (    
     <NavLink to={"/messages/" + props.id}>{props.name}</NavLink>    
