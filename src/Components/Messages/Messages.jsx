@@ -1,7 +1,8 @@
 import React from 'react';
 import msg from './Messages.module.css';
 import { NavLink } from 'react-router-dom';
-
+// import dataUsers from '../../dataUsers';
+// import dataMessage from '../../dataMessage';
 
 let dataUsers = [
   {id: 1, name: "Dmitry"},
@@ -50,7 +51,7 @@ let msgusrs = dataMessage.map((m) => {
 
 
 
-function Messages() {
+function Messages(props) {
   return(
     <div className={msg.messages}>
       
