@@ -20,8 +20,8 @@ function App(props) {
         <div className="generalbody">        
           <Navbar/>
           {/* <Route path="/messages" component={Messages}/> */}
-          <Route path="/profile" render={() => <Content postsArr={props.postsArr}/>} />          
-          <Route path="/messages" render={() => <Messages dataUsers={props.dataUsers} dataMessage={props.dataMessage}/>}/>
+          <Route path="/profile" render={() => <Content postsArr={props.dt.postsArr}/>} />          
+          <Route path="/messages" render={() => <Messages dataUsers={props.dt.dataUsers} dataMessage={props.dt.dataMessage}/>}/>
           <Route path="/news" render={() => <News/>}/>
           <Route path="/music" render={() => <Music/>}/>
           <Route path="/settings" render={() => <Settings/>}/> 
